@@ -1,0 +1,67 @@
+// Font style
+@mixin font($fz, $fw: normal, $lh: 1.2) {
+   font-weight: $fw;
+   font-size: $fz;
+   line-height: $lh;
+}
+
+// Block's container
+@mixin container() {
+   max-width: $maxWidth + px;
+   margin: 0 auto;
+   padding: 0 $maxPadding + px;
+   @media (max-width: $md) {
+      padding: 0 calc(#{$maxPadding + px} * 0.5);
+   }
+}
+
+// Flex-container
+@mixin flex($ai: stretch, $jc: space-between) {
+   display: flex;
+   justify-content: $jc;
+   align-items: $ai;
+}
+
+// Position
+@mixin pos($p: absolute, $t: auto, $r: auto, $b: auto, $l: auto) {
+   position: $p;
+   top: $t;
+   right: $r;
+   bottom: $b;
+   left: $l;
+}
+
+// Align center
+@mixin ac($t: 50%, $l: 50%) {
+   top: $t;
+   left: $l;
+   transform: translate(#{-$t}, #{-$l});
+}
+
+// Change placeholder's color
+@mixin placeholder($c1, $c2: transparent) {
+   &::-webkit-input-placeholder {
+      color: $c1;
+   }
+   &::-moz-placeholder {
+      color: $c1;
+   } /* Firefox 19+ */
+   &:-moz-placeholder {
+      color: $c1;
+   } /* Firefox 18- */
+   &:-ms-input-placeholder {
+      color: $c1;
+   }
+   &:focus::-webkit-input-placeholder {
+      color: $c2;
+   }
+   &:focus::-moz-placeholder {
+      color: $c2;
+   }
+   &:focus:-moz-placeholder {
+      color: $c2;
+   }
+   &:focus:-ms-input-placeholder {
+      color: $c2;
+   }
+}

@@ -1,0 +1,13 @@
+// html {
+//    scroll-behavior: smooth;
+// }
+
+body {
+   font-family: $font;
+   @include font(14px, $light);
+   color: $color-d;
+   background-color: $color-l;
+   &_lock {
+      overflow: hidden;
+   }
+}

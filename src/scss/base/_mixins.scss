@@ -1,34 +1,35 @@
 // Font style
-@mixin font($fz, $fw: normal, $lh: 1.2) {
+@mixin font($fs, $fw: normal, $lh: 1.2) {
    font-weight: $fw;
-   font-size: $fz;
+   font-size: $fs;
    line-height: $lh;
 }
 
 // Block's container
 @mixin container() {
-   max-width: $maxWidth + px;
+   max-width: $maxWidth;
    margin: 0 auto;
-   padding: 0 $maxPadding + px;
+   padding: 0 $maxPadding;
    @media (max-width: $md) {
-      padding: 0 calc(#{$maxPadding + px} * 0.5);
+      padding: 0 calc(#{$maxPadding} * 0.5);
    }
 }
 
 // Flex-container
-@mixin flex($ai: stretch, $jc: space-between) {
+@mixin flex($ai: stretch, $jc: flex-start) {
    display: flex;
    justify-content: $jc;
    align-items: $ai;
 }
 
 // Position
-@mixin pos($p: absolute, $t: auto, $r: auto, $b: auto, $l: auto) {
+@mixin pos($p: absolute, $t: auto, $r: auto, $b: auto, $l: auto, $z: auto) {
    position: $p;
    top: $t;
    right: $r;
    bottom: $b;
    left: $l;
+   z-index: $z;
 }
 
 // Align center

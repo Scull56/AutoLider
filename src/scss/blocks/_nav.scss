@@ -1,0 +1,115 @@
+.nav {
+   @include flex($jc: space-between);
+   @include pos(relative);
+   &__logo {
+      @include flex(center);
+   }
+   &__logo-img {
+      max-width: 40px;
+      max-height: 40px;
+      img {
+         max-width: 100%;
+         width: 100%;
+      }
+   }
+   &__text {
+      margin-left: 10px;
+   }
+   &__title {
+      @include font(25px, 600);
+   }
+   &__subtitle {
+      @include font(12px);
+   }
+   &__burger {
+      @include flex($jc: flex-end);
+      transform: translateX(-5px);
+      max-width: 50px;
+      align-content: center;
+      flex-wrap: wrap;
+      span {
+         display: block;
+         @include pos(relative);
+         height: 4px;
+         margin-bottom: 6px;
+         border-radius: 4px;
+         background-color: $bg-color-d;
+         &:before {
+            content: "";
+            display: block;
+            @include pos(absolute, $b: -3px, $r: -5px, $z: -1);
+            height: 4px;
+            border-radius: 4px;
+            background-color: $accent-color-l;
+         }
+         &:first-child {
+            width: 50px;
+            &:before {
+               width: 50px;
+            }
+         }
+         &:nth-child(2) {
+            width: 45px;
+            &:before {
+               width: 45px;
+            }
+         }
+         &:last-child {
+            width: 30px;
+            &:before {
+               width: 30px;
+            }
+         }
+      }
+      &:hover .nav__burger span:before {
+         background-color: $accent-color-d;
+      }
+      cursor: pointer;
+   }
+   &__pages {
+      @include pos(absolute, 0, 0);
+      visibility: hidden;
+      opacity: 0;
+      background-color: $accent-color-l;
+      transition: $ts-time;
+      padding: 40px 40px;
+      border-radius: 8px;
+      &_active {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+   &__item {
+      cursor: pointer;
+      @include font(18px);
+      margin-bottom: 6px;
+   }
+   &__main-modal {
+      @include pos(relative);
+   }
+   &__close {
+      @include pos(absolute, 5px, 5px);
+      cursor: pointer;
+      width: 43px;
+      height: 43px;
+      transition: $ts-time;
+      &:hover {
+         background-color: $bg-color-l;
+         border-radius: 50px;
+      }
+      span {
+         display: block;
+         height: 4px;
+         width: 35px;
+         border-radius: 4px;
+         background-color: $bg-color-d;
+         transform-origin: center center;
+         &:first-child {
+            transform: translate(4px, 20px) rotate(-45deg);
+         }
+         &:last-child {
+            transform: translate(4px, 17px) rotate(45deg);
+         }
+      }
+   }
+}

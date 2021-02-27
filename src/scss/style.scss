@@ -6,13 +6,18 @@
 
 // === Blocks ====
 @import "blocks/section";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/ovefflow-block";
+@import "blocks/social";
 // @import "blocks";
 // @import "blocks";
 
 // === Sections ====
+@import "sections/mainscreen";
+@import "sections/header";
 // @import "sections";
 // @import "sections";
 // @import "sections";
-
-// === Media ===
-@import "base/media";
+// @import "sections";
+// @import "sections";

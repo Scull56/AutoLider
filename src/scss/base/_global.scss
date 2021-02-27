@@ -4,7 +4,7 @@
 
 body {
    font-family: $font;
-   @include font(14px, $light);
+   @include font(14px, $l);
    color: $color-d;
    background-color: $color-l;
    &_lock {

@@ -1,0 +1,6 @@
+.overflow-block {
+   @include pos(absolute);
+   width: 100vw;
+   height: 100vh;
+   visibility: hidden;
+}

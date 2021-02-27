@@ -1,0 +1,27 @@
+.social {
+   @include pos(fixed, 45vh, $l: 20px);
+   &_item {
+      cursor: pointer;
+      @include pos(relative);
+      background-color: $bg-color-d;
+      border-radius: 4px;
+      height: 30px;
+      width: 30px;
+      margin-bottom: 5px;
+      transition: $ts-time;
+      img {
+         transform: translate(5px, 5px);
+         filter: invert(1);
+         max-width: 70%;
+         max-height: 70%;
+      }
+      &:hover {
+         background-color: $accent-color-l;
+         img {
+            filter: invert(0);
+            stroke: $color-d;
+            fill: $color-d;
+         }
+      }
+   }
+}

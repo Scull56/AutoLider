@@ -1,16 +1,16 @@
 // Colors
 $accent-color-l: #f1d493;
-$accent-color-d: #f1d493;
+$accent-color-d: #e7b952;
 $color-d: #000000;
 $color-l: #ffffff;
 $bg-color-d: #000000;
 $bg-color-l: #ffffff;
 
 // Font
-$font: "Segoe UI", sans-serif;
-$bold: 700;
-$normal: 500;
-$light: 300;
+$font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$b: 700;
+$n: 600;
+$l: 300;
 
 // Screen sizes
 $sm: 576px;
@@ -18,6 +18,26 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1440px;
+
+// Container
+$maxWidth: 1200px;
+$maxPadding: 30px;
+
+// Media
+@media (max-width: $xxl) {
+}
+
+@media (max-width: $xl) {
+}
+
+@media (max-width: $lg) {
+}
+
+@media (max-width: $md) {
+}
+
+@media (max-width: $sm) {
+}
 
 // Transition
 $ts-time: 300ms;

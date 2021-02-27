@@ -1,0 +1,6 @@
+.header {
+   @include pos(relative);
+   max-width: 1650px;
+   padding: 25px 20px 0px;
+   margin-bottom: 100px;
+}

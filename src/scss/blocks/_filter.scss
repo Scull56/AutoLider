@@ -1,0 +1,20 @@
+.filter {
+   border-radius: 8px;
+   padding: 5px 10px;
+   &_light {
+      background-color: $accent-color-l;
+   }
+   &_gray {
+      background-color: $gray;
+   }
+   &__list {
+      @include flex();
+      flex-wrap: wrap;
+   }
+   &__item {
+      cursor: pointer;
+      &:hover {
+         font-weight: $n;
+      }
+   }
+}

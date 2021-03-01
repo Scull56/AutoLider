@@ -1,3 +1,9 @@
 .section {
    margin-bottom: 110px;
+   &__title {
+      @include font(30px, $n);
+   }
+   &__subtitle {
+      @include font(16px);
+   }
 }

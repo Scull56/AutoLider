@@ -1,2 +1,35 @@
 .mainscreen {
+   &__slider {
+      /* Высота слайдера и слайдов */
+      height: 70vh;
+      /* Ширина слайдера и слайдов */
+      width: 100%;
+   }
+   &__nav-box {
+      @include pos(absolute, $r: 0, $b: 0);
+   }
+   &__item {
+      @include pos(relative);
+   }
+   &__title {
+      @include font(35px, $n);
+   }
+   &__subtitle {
+      @include font(20px);
+   }
+   &__image {
+      @include pos(absolute, -50px, -30px);
+      height: 70vh;
+      width: 60vw;
+      img {
+         object-fit: contain;
+      }
+   }
+   &__btns {
+      @include flex();
+      @include pos(absolute, $b: 0, $l: 0);
+   }
+   &__button:first-child {
+      margin-right: 10px;
+   }
 }

@@ -1,0 +1,39 @@
+.car-info {
+   @include flex();
+   &__wrapper {
+      @include flex();
+   }
+
+   &__box {
+      @include flex();
+   }
+
+   &__column {
+   }
+
+   &__title {
+   }
+
+   &__parameters {
+   }
+
+   &__param {
+   }
+
+   &__pay {
+   }
+
+   &__method {
+      text-decoration: underline;
+   }
+
+   &__price {
+   }
+
+   &__image {
+      width: 100px;
+      img {
+         object-fit: contain;
+      }
+   }
+}

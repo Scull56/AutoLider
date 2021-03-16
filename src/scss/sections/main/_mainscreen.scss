@@ -26,10 +26,6 @@
       }
    }
    &__btns {
-      @include flex();
       @include pos(absolute, $b: 0, $l: 0);
-   }
-   &__button:first-child {
-      margin-right: 10px;
    }
 }

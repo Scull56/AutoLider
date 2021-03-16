@@ -1,0 +1,59 @@
+.best {
+   &__models {
+      @include flex();
+      margin-top: 35px;
+      flex-wrap: wrap;
+   }
+   &__lines {
+      @include flex();
+      flex-wrap: wrap;
+   }
+   &__model {
+      @include pos(relative);
+      @include flex(center);
+      flex-direction: column;
+      width: clamp(14.2%, 120px, 50%);
+      @include font(18px);
+      padding-top: 38px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      img {
+         @include pos(absolute, 0);
+         filter: brightness(0);
+      }
+      &:hover {
+         font-weight: $n;
+      }
+   }
+   &__filter {
+      border-radius: 8px;
+      padding: 10px 10px;
+      background-color: $accent-color-l;
+      @include pos(relative, -20px);
+      &:before {
+         content: "";
+         @include pos(absolute, -20px, $l: 20px);
+         border: 10px solid transparent; /* Прозрачные границы */
+         border-bottom: 10px solid $accent-color-l;
+      }
+   }
+   &__class {
+      @include font(18px);
+      cursor: pointer;
+      margin-right: 10px;
+      &:hover {
+         font-weight: $n;
+      }
+   }
+   &__link {
+      text-decoration: underline;
+      &:hover {
+         @include font($n);
+         text-decoration: underline;
+      }
+   }
+   &__slider {
+      height: 100%;
+      width: 50%;
+   }
+}

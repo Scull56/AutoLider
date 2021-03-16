@@ -11,18 +11,16 @@
 @import "blocks/ovefflow-block";
 @import "blocks/social";
 @import "blocks/slider";
-@import "blocks/button";
-@import "blocks/filter";
-// @import "blocks";
-// @import "blocks";
+@import "blocks/btns";
+@import "blocks/header";
+@import "blocks/car-info";
 // @import "blocks";
 // @import "blocks";
 // @import "blocks";
 
 // === Sections ====
-@import "sections/mainscreen";
-@import "sections/header";
-@import "sections/best";
+@import "sections/main/mainscreen";
+@import "sections/main/best";
 // @import "sections";
 // @import "sections";
 // @import "sections";

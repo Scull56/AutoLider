@@ -1,0 +1,23 @@
+.consult {
+   &__subtitle {
+      margin-bottom: 40px;
+   }
+
+   &__wrapper {
+      @include flex();
+   }
+
+   &__map {
+      flex-basis: 50%;
+   }
+
+   &__form {
+      flex-basis: 50%;
+      padding-right: 70px;
+   }
+
+   &__input,
+   &__select {
+      width: 100%;
+   }
+}

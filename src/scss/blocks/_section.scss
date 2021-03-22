@@ -6,4 +6,10 @@
    &__subtitle {
       @include font(16px);
    }
+   &_center {
+      .section__title,
+      .section__subtitle {
+         text-align: center;
+      }
+   }
 }

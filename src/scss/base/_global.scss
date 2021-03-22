@@ -7,10 +7,17 @@ body {
    @include font(14px, $l);
    color: $color-d;
    background-color: $color-l;
+   overflow-x: hidden;
    &_lock {
       overflow: hidden;
    }
    a {
       color: $color-d;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+   .ibg {
+      @include ibg();
    }
 }

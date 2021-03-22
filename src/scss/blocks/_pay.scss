@@ -1,0 +1,27 @@
+.pay {
+   font-weight: $n;
+   @include flex();
+   margin-bottom: 10px;
+   &__method {
+      @include pos(relative);
+      text-decoration: underline;
+      margin-right: 10px;
+      padding-left: 16px;
+      &:last-child {
+         margin-right: 0;
+      }
+      &:before {
+         content: "";
+         @include pos(absolute);
+         @include ac(50%, 0);
+         display: block;
+         height: 13px;
+         width: 13px;
+         background: center / contain no-repeat url("../image/icons/other/check.png");
+      }
+   }
+   &_vertical {
+      flex-direction: column;
+      margin-bottom: 0;
+   }
+}

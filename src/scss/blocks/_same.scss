@@ -1,0 +1,46 @@
+.same {
+   &__title {
+      @include font(18px);
+      margin-bottom: 20px;
+   }
+
+   &__wrapper {
+      @include flex($jc: space-between);
+      flex-wrap: wrap;
+   }
+
+   &__item {
+      flex-basis: clamp(33.3%, 300px, 100%);
+      border-right: 2px solid $accent-color-l;
+      padding: 0 30px;
+      &:last-child {
+         border-right: none;
+      }
+   }
+
+   &__image {
+      img {
+         width: 100%;
+      }
+   }
+
+   &__name {
+      @include font(16px);
+   }
+
+   &__box {
+      @include flex(flex-start, space-between);
+   }
+
+   &__buy {
+      @include flex($jc: space-between);
+      flex-direction: column;
+   }
+
+   &__price {
+      @include font(14px);
+   }
+   &__more {
+      margin: 0 auto !important;
+   }
+}

@@ -1,39 +1,26 @@
 .car-info {
-   @include flex();
-   &__wrapper {
-      @include flex();
-   }
-
-   &__box {
-      @include flex();
-   }
-
-   &__column {
-   }
-
+   @include flex($jc: space-between);
    &__title {
+      @include font(22px, $n);
+      @include pos(relative);
+      display: inline-flex;
+      flex-direction: column;
+      margin-bottom: 10px;
    }
-
-   &__parameters {
-   }
-
    &__param {
+      @include font(17px, $l);
+      margin-bottom: 10px;
    }
-
-   &__pay {
-   }
-
-   &__method {
-      text-decoration: underline;
-   }
-
    &__price {
+      @include font(18px);
    }
-
    &__image {
-      width: 100px;
+      max-height: 100%;
       img {
-         object-fit: contain;
+         width: 100%;
       }
+   }
+   &__button {
+      @include font(14px);
    }
 }

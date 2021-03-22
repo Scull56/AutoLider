@@ -36,7 +36,19 @@
 @mixin ac($t: 50%, $l: 50%) {
    top: $t;
    left: $l;
-   transform: translate(#{-$t}, #{-$l});
+   transform: translate(#{-$l}, #{-$t});
+}
+
+// IBG метод
+@mixin ibg($bp: center, $bs: cover, $br: no-repeat, $pb: 30%) {
+   background-position: $bp;
+   background-size: $bs;
+   background-repeat: $br;
+   padding-bottom: $pb;
+   height: 100%;
+   & > img {
+      display: none;
+   }
 }
 
 // Change placeholder's color

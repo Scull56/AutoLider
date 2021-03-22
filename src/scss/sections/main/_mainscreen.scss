@@ -18,9 +18,11 @@
       @include font(20px);
    }
    &__image {
-      @include pos(absolute, -50px, -30px);
+      @include pos(absolute, 50%, 0);
+      transform: translateY(-50%);
       height: 70vh;
       width: 60vw;
+      min-width: 700px;
       img {
          object-fit: contain;
       }

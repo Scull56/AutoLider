@@ -1,0 +1,45 @@
+.about {
+   &__subtitle {
+      margin-bottom: 10px;
+   }
+
+   &__wrapper {
+      @include flex();
+   }
+
+   &__info {
+      flex-basis: 40%;
+      @include flex();
+      flex-direction: column;
+   }
+
+   &__text {
+      margin-bottom: 20px;
+      @include font(16px, $l);
+   }
+
+   &__list {
+      margin-bottom: 30px;
+   }
+
+   &__advantage {
+      @include pos(relative);
+      @include font(16px, $l);
+      padding-left: 16px;
+      &:before {
+         content: "";
+         @include pos(absolute, 6px, $l: 0);
+         display: block;
+         height: 13px;
+         width: 13px;
+         background: center / contain no-repeat url("../image/icons/other/check.png");
+      }
+   }
+
+   &__image {
+      flex-basis: 60%;
+      img {
+         width: 100%;
+      }
+   }
+}

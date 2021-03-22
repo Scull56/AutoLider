@@ -33,7 +33,7 @@
       &:before {
          content: "";
          @include pos(absolute, -20px, $l: 20px);
-         border: 10px solid transparent; /* Прозрачные границы */
+         border: 10px solid transparent;
          border-bottom: 10px solid $accent-color-l;
       }
    }
@@ -53,7 +53,27 @@
       }
    }
    &__slider {
-      height: 100%;
-      width: 50%;
+      flex: 1 1 500px;
+      @include pos(relative);
+   }
+   &__image {
+      max-width: 80%;
+   }
+   &__price {
+      @include pos(absolute, $r: 0, $b: -100%);
+   }
+   &__main-card {
+      padding-left: 20px;
+      border-left: 3px solid $accent-color-l;
+      margin-bottom: 30px;
+   }
+   &__nav {
+      @include pos(absolute, $b: 0, $r: 0);
+   }
+   &__same-wr {
+      margin-bottom: 40px;
+   }
+   &__more {
+      margin-bottom: 50px;
    }
 }

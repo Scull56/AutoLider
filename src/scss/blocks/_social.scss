@@ -24,4 +24,7 @@
          }
       }
    }
+   @media (max-width: $xl) {
+      display: none;
+   }
 }

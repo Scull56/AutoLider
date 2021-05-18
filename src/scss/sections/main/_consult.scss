@@ -9,11 +9,18 @@
 
    &__map {
       flex-basis: 50%;
+      @media (max-width: $lg) {
+         display: none;
+      }
    }
 
    &__form {
       flex-basis: 50%;
       padding-right: 70px;
+      @media (max-width: $lg) {
+         flex-basis: 100%;
+         padding-right: 0px;
+      }
    }
 
    &__input,

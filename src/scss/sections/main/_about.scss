@@ -12,6 +12,10 @@
       @include flex();
       flex-direction: column;
       margin-right: 20px;
+      @media (max-width: $lg) {
+         flex-basis: 100%;
+         margin-right: 0px;
+      }
    }
 
    &__text {
@@ -41,6 +45,9 @@
       flex-basis: 60%;
       img {
          width: 100%;
+      }
+      @media (max-width: $lg) {
+         display: none;
       }
    }
 }

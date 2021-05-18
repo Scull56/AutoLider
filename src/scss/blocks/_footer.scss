@@ -1,0 +1,45 @@
+.footer {
+   &__links {
+      background-color: $gray-l;
+      padding-top: 20px;
+   }
+
+   &__box {
+      @include flex($jc: space-between);
+      flex-wrap: wrap;
+   }
+
+   &__column {
+      width: clamp(15%, 200px, clamp(50%, 320px, 100%));
+      margin-bottom: 10px;
+   }
+
+   &__part {
+      @include font(22px);
+   }
+
+   &__link {
+      @include font(14px);
+      margin: 10px 0;
+   }
+
+   &__info {
+      background-color: $gray-d;
+      padding: 20px 0;
+      color: $gray-l;
+   }
+
+   &__copyright {
+      flex: 0 1 500px;
+      margin-bottom: 20px;
+   }
+
+   &__confident {
+      flex: 0 1 300px;
+      margin-bottom: 15px;
+      a {
+         color: $gray-l;
+         padding-right: 10px;
+      }
+   }
+}

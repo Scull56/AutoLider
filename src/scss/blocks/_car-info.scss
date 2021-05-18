@@ -1,5 +1,14 @@
 .car-info {
    @include flex($jc: space-between);
+   @media (max-width: $lg) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   &__wrapper {
+      @media (max-width: $lg) {
+         flex-basis: 100%;
+      }
+   }
    &__title {
       @include font(22px, $n);
       @include pos(relative);

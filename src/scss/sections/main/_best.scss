@@ -55,6 +55,8 @@
    &__slider {
       flex: 1 1 500px;
       @include pos(relative);
+      @media (max-width: $lg) {
+      }
    }
    &__image {
       max-width: 80%;

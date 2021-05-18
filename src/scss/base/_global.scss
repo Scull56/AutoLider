@@ -15,6 +15,7 @@ body {
       color: $color-d;
       &:hover {
          cursor: pointer;
+         text-decoration: underline;
       }
    }
    .ibg {
